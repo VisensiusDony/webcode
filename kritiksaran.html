@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kritik & Saran</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+	h3
+	{
+	 margin:0px;
+	 text-align:center;
+	 background-image: url("matrix.jpg");
+	 padding:20px;
+	}
+	font
+	{
+	 text-align:center;
+	 font-size:60px;
+	 color:black;
+	 font-family:serif;
+	 font-weight: bold;
+	}
+    .navbar {
+      background-color: #ed2643;
+	  margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 450px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: gray;
+      height: 100%;
+	  font-size:20px;
+    }
+    
+    footer {
+      background-color: #ed2643;
+      color: white;
+      padding: 15px;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+  <script type="text/javascript">  
+// 1 detik = 1000  
+window.setTimeout("waktu()",1000);    
+function waktu() {     
+    var tanggal = new Date();    
+    setTimeout("waktu()",1000);    
+    document.getElementById("output").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();  
+}  
+</script>  
+</head>
+<body>
+<h3>
+<p style="text-align:right"><a href="login.html">Login</a> | <a href="regis.html">Registrasi</a></p>
+<img src="icon2.png"></img>
+<font>EDU_LAB</font>
+<p style="color:black"><marquee>Selamat Datang di Web Pemrograman Kami!</marquee></p>
+</h3>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Cari">
+      </div>
+      <button type="submit" class="btn btn-default">Cari</button>
+    </form>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    </div>
+  </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">
+    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     <p><a href="index.html" style="color:white"><i class="material-icons">home</i>Home</a></p>
+	 <hr style="border-top:2px solid black">
+      <p><a href="materi.html" style="color:white"><i class="material-icons">book</i>Materi</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="request.html" style="color:white"><i class="material-icons">add</i>Request</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="kritiksaran.html" style="color:white"><i class="material-icons">mail</i>Kritik & Saran</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="kontak.html" style="color:white"><i class="material-icons">phone</i>Kontak</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="login.html" style="color:white"><i class="material-icons">logout</i>Keluar</a></p>
+    </div>
+	<div class="col-sm-8 text-left">
+	<h1>Kritik & Saran</h1>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email"></div>
+	<div class="form-group">
+  <label for="comment">Kritik:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+<div class="form-group">
+  <label for="comment">Saran:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+   </div>
+    <div class="col-sm-2 sidenav">
+		<p>
+		<table align="center" style="border:2px solid black;color:white"><tr><td>  
+<script type="text/javascript"><!--  
+function makeArray() {  
+for (i = 0; i<makeArray.arguments.length; i++)  
+this[i + 1] = makeArray.arguments[i];  
+}  
+  
+var months = new makeArray('Januari','Februari','Maret','April','Mei',  
+'Juni','Juli','Augustus','September','Oktober','November','Desember');  
+var date = new Date();  
+var day = date.getDate();  
+var month = date.getMonth() + 1;  
+var yy = date.getYear();  
+var year = (yy < 1000) ? yy + 1900 : yy;  
+  
+document.write(day + " " + months[month] + " " + year);  
+//--></script>  <div id="output">  
+</div></td></tr>  
+</table></p>
+<hr style="border-top:2px solid black">
+<p>
+<div class="list-group list-group-flush">
+<a href="materi.html" class="list-group-item list-group-item flex-column align-items-start">
+<div class=row>
+<h6 class=mb-1>Belajar Perulangan dengan Mudah dan Cepat!</h6>
+</div>
+</a>
+<hr style="border-top:2px solid black">
+<a href="materi2.html" class="list-group-item list-group-item flex-column align-items-start">
+<div class=row>
+<h6 class=mb-1>Mengenal dan Belajar Suatu Kondisi</h6>
+</div>
+</a>    
+</div>
+    </p>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Design By Visensius Dony Putra</p>
+</footer>
+
+</body>
+</html>

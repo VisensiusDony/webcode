@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Materi Perulangan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+	h3
+	{
+	 margin:0px;
+	 text-align:center;
+	 background-image: url("matrix.jpg");
+	 padding:20px;
+	}
+	font
+	{
+	 text-align:center;
+	 font-size:60px;
+	 color:black;
+	 font-family:serif;
+	 font-weight: bold;
+	}
+    .navbar {
+      background-color: #ed2643;
+	  margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 450px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: gray;
+      height: 200%;
+	  font-size:20px;
+    }
+    
+    footer {
+      background-color: #ed2643;
+      color: white;
+      padding: 15px;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	video 
+	{
+    width: 100%;
+    height: 100%;
+	}
+  </style>
+  <script type="text/javascript">  
+// 1 detik = 1000  
+window.setTimeout("waktu()",1000);    
+function waktu() {     
+    var tanggal = new Date();    
+    setTimeout("waktu()",1000);    
+    document.getElementById("output").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();  
+}  
+</script>  
+</head>
+<body>
+<h3>
+<p style="text-align:right"><a href="login.html">Login</a> | <a href="regis.html">Registrasi</a></p>
+<img src="icon2.png"></img>
+<font>EDU_LAB</font>
+<p style="color:black"><marquee>Selamat Datang di Web Pemrograman Kami!</marquee></p>
+</h3>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+      <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Cari">
+      </div>
+      <button type="submit" class="btn btn-default">Cari</button>
+    </form>
+	<ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Materi
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="materi.html">Looping(Perulangaan)</a></li>
+          <li><a href="materi2.html">Kondisi</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    </div>
+	
+  </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     <p><a href="index.html" style="color:white"><i class="material-icons">home</i>Home</a></p>
+	 <hr style="border-top:2px solid black">
+      <p><a href="materi.html" style="color:white"><i class="material-icons">book</i>Materi</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="request.html" style="color:white"><i class="material-icons">add</i>Request</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="kritiksaran.html" style="color:white"><i class="material-icons">mail</i>Kritik & Saran</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="kontak.html" style="color:white"><i class="material-icons">phone</i>Kontak</a></p>
+	  <hr style="border-top:2px solid black">
+      <p><a href="login.html" style="color:white"><i class="material-icons">logout</i>Keluar</a></p>
+    </div>
+	<div class="col-sm-8 text-left">
+	<h1>Looping/Pengulangan</h1>
+    <video controls>
+  <source src="looping(fix).mp4" type="video/mp4">
+	</video>
+	<div class="panel-group" id="accordion">
+  <div class="panel panel-default" style="background-color:black;color:white">
+    <div class="panel-heading" style="background-color:red">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Pengertian</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Looping/Pengulangan
+<p>Pada kehidupan sehari-hari tentunya akan ada yang kita lakukan secara rutin/berulang. Dalam pemrograman pengulangan juga digunakan untuk mengulang suatu instruksi. Ada lima macam notasi pengulangan:</p>
+<p>1. repeat n times (aksi)</p>
+<p>2. repeat (aksi) until (kondisi berhenti)</p>
+<p>3. while (kondisi pengulangan) do (aksi)</p>
+<p>4. iterate (aksi-1) stop (kondisi-berhenti) (aksi-2).</p></div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="background-color:black;color:white">
+    <div class="panel-heading" style="background-color:red">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Algoritma</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">///Judul
+<p>Menuliskan angka 1,2,3,4,5,6,7,8,9,10</p>
+<p>///Kamus</p>
+<p>i<-integer</p>
+<p>///Deskripsi</p>
+<p>i<-1</p>
+<p>while(i<=10)do</p>
+<p>{</p>
+<p>output (i)</p>
+<p>i<-i+1</p>
+<p>}</p></div>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+	</div>
+	
+    <div class="col-sm-2 sidenav">
+		<p>
+		<table align="center" style="border:2px solid black;color:white"><tr><td>  
+<script type="text/javascript"><!--  
+function makeArray() {  
+for (i = 0; i<makeArray.arguments.length; i++)  
+this[i + 1] = makeArray.arguments[i];  
+}  
+  
+var months = new makeArray('Januari','Februari','Maret','April','Mei',  
+'Juni','Juli','Augustus','September','Oktober','November','Desember');  
+var date = new Date();  
+var day = date.getDate();  
+var month = date.getMonth() + 1;  
+var yy = date.getYear();  
+var year = (yy < 1000) ? yy + 1900 : yy;  
+  
+document.write(day + " " + months[month] + " " + year);  
+//--></script>  <div id="output">  
+</div></td></tr>  
+</table></p>
+<hr style="border-top:2px solid black">
+<p>
+<div class="list-group list-group-flush">
+<a href="materi.html" class="list-group-item list-group-item flex-column align-items-start">
+<div class=row>
+<h6 class=mb-1>Belajar Perulangan dengan Mudah dan Cepat!</h6>
+</div>
+</a>
+<hr style="border-top:2px solid black">
+<a href="materi2.html" class="list-group-item list-group-item flex-column align-items-start">
+<div class=row>
+<h6 class=mb-1>Mengenal dan Belajar Suatu Kondisi</h6>
+</div>
+</a>    
+</div>
+    </p>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Design By Visensius Dony Putra</p>
+</footer>
+
+</body>
+</html>
